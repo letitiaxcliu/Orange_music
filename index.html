@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
+    <title>OrangeMusic</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/Find-recommendSongs.css">
+    <link rel="stylesheet" href="./css/Find-detailedSongs.css">
+    <link rel="stylesheet" href="./css/lyrics.css">
+</head>
+
+<body>
+
+    <audio id="audio" src=""></audio>
+
+    <!-- 系统导航栏 -->
+    <div class="systemnav"></div>
+
+    <!-- header start -->
+    <header class="header">
+        <div class="nav clearfix" name='navsongs1'>
+            <span class="fl catalog-icon"><a href="./setting.html"></a></span>
+            <ul class="fl navlist clearfix">
+                <li class="mysongs-icon"></li>
+                <li class="music-icon nav-selecting"></li>
+                <li class="video-icon"></li>
+            </ul>
+            <span class="fr search-icon"></span>
+        </div>
+
+        <div class="detailedSongsnav clearfix" name='navsongs0'>
+            <i class="fl" data-moudle="c-recommendSongs" data-nav="nav"></i>
+            <div class="fl detnav-txt">
+                <h3>歌单</h3>
+                <p class="one-txt">愿你永远kg，一切如你所愿，愿他明了nx，不惧外界纷扰</p>
+            </div>
+            <div class="detnav-icon fr clearfix">
+                <span class="search-icon fl"></span>
+                <span class="more-icon fr"></span>
+            </div>
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="contentbox">
+
+        <!-- 推荐歌单总列表 -->
+        <div class="c-recommendSongs" name='rsongs1'>
+            <div class="c-recommendSongsbox">
+                <!-- slide start -->
+                <div class="slide" id="slide">
+                    <ul class="clearfix">
+                        <li><img class="autoimg" src="./images/sli1.jpg" /></li>
+                        <li><img class="autoimg" src="./images/sli2.jpg" /></li>
+                        <li><img class="autoimg" src="./images/sli3.jpg" /></li>
+                        <li><img class="autoimg" src="./images/sli4.jpg" /></li>
+                    </ul>
+                    <!-- <ol>
+                        <li class="con"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol> -->
+                </div>
+
+                <!-- 内容导航栏 -->
+                <div class="subnav clearfix">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="subnavimg">
+                                <img src="./icons/calendar.png" />
+                            </div>
+                            <span class="con">推荐</span>
+                        </li>
+                        <li>
+                            <div class="subnavimg">
+                                <img src="./icons/songs-list.png" />
+                            </div>
+                            <span>歌单</span>
+                        </li>
+                        <li>
+                            <div class="subnavimg">
+                                <img src="./icons/radio.png" />
+                            </div>
+                            <span>电台</span>
+                        </li>
+                        <li>
+                            <div class="subnavimg">
+                                <img src="./icons/leaderboard.png" />
+                            </div>
+                            <span>排行榜</span>
+                        </li>
+                        <li>
+                            <div class="subnavimg">
+                                <img src="./icons/live-broadcast.png" />
+                            </div>
+                            <span>直播</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 推荐歌单内容 -->
+                <div class="recommendSongsbox">
+                    <div class="recommendSongs-title clearfix">
+                        <span class="fl">推荐歌单</span>
+                        <i class="fl"></i>
+                    </div>
+                    <div class="recommendSongs-list clearfix">
+                        <!-- <div class="recommendSongs-item" id="">
+                        <div class="item">
+                            <div class="fr">
+                                <span class="fl listen-icon"></span>
+                                <span class="fl listen-count">
+                                    100.00万
+                                </span>
+                            </div>
+                        </div>
+                        <div class="recommendSongs-img">
+                            <img class="autoimg" src="./images/singer.jpg" alt="">
+                        </div>
+                        <p class="recommendSongs-txt two-txt">
+                            1111111wdewafc
+                            sdfdssdgdgdhbdfbfgnfnfndghdrhjdjfjhdfhd
+                        </p>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 推荐歌单总列表end-->
+
+        <!-- 推荐详细歌单内容列表 -->
+        <div class="c-detailedSongs" name='rsongs0'>
+            <div class="detailedSongsbox">
+
+                <div class="det-title">
+                    <!-- <div class="det-titleinfo">
+                        <div class="clearfix">
+                            <div class="detimg fl">
+                                <img class="autoimg" src="https://p1.music.126.net/w4My4ewhaoBKUn8tCu56QQ==/109951164372728055.jpg" alt="">
+                            </div>
+                            <div class="dettxt fl">
+                                <h3 id="dettitle">你好，很高兴遇见你！</h3>
+                                <div class="det-user">
+                                    <div class="userimg fl">
+                                        <img id="detimg" class="autoimg" src="./images/index-slide1.png" alt="">
+                                    </div>
+                                    <span class="username one-txt fl">知道世界为什么残酷吗</span>
+                                    <i class="fl"></i>
+                                </div>
+                                <div class="det-txt">
+                                    <p class="fl two-txt" id="detintroduce">
+                                        这个世界永远不会为谁而停留，我想要遇见你，也不是一件容易的的事情
+                                    </p>
+                                    <i class="fr"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="det-list">
+                    <!-- <div class="detlist-title clearfix">
+                        <i class="fl"></i>
+                        <h3 class="fl">播放全部</h3>
+                        <span>(100首）</span>
+                    </div> -->
+
+                    <!-- <div class="detlist-item">
+                        <div class="detitem-icon">
+                            <i></i>
+                        </div>
+                        <div class="det-song clearfix">
+                            <div class="detsinger fl">
+                                <img class="autoimg" src="./images/singerlay.jpg" alt="">
+                            </div>
+                            <div class="detsong-info fl">
+                                <span class="det-sonname one-txt">歌曲名字：野狼disco</span>
+                                <span class="det-sinname one-txt">全明星版:张艺兴、王一博、肖战、吴磊、刘昊然、赵丽颖</span>
+                            </div>
+                        </div>
+                        <div class="det-time fl" data-dt="${v.dt}">${formatTime(v.dt)}</div>
+                        <div class="fr det-moreinfo">
+                            <i></i>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="detlist-item">
+                        <div class="detitem-icon">
+                            <i></i>
+                        </div>
+                        <div class="det-song clearfix">
+                            <div class="detsinger fl">
+                                <img class="autoimg" src="./images/singerlay.jpg" alt="">
+                            </div>
+                            <div class="detsong-info fl">
+                                <span class="det-sonname one-txt">歌曲名字：野狼disco</span>
+                                <span class="det-sinname one-txt">全明星版:张艺兴、王一博、肖战、吴磊、刘昊然、赵丽颖</span>
+                            </div>
+                        </div>
+                        <div class="det-time" data-dt="${v.dt}">${formatTime(v.dt)}</div>
+                        <div class="fr det-moreinfo">
+                            <i></i>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <!-- 推荐详细歌单内容列表end -->
+        <!-- !!!! -->
+    </div>
+    <!-- contentbox end -->
+
+    <!-- footer start -->
+    <!-- 音乐控制 name=0暂停，name=1播放-->
+    <div class="footer" name="0">
+        <div class="fl clearfix f-img">
+            <div class="singer">
+                <img class="autoimg" src="./images/singerlay.jpg" alt="" />
+            </div>
+
+            <!-- 飘动小音符 -->
+            <i class="musicnote mnote1"></i>
+            <i class="musicnote mnote2"></i>
+            <i class="musicnote mnote3"></i>
+            <i class="musicnote mnote4"></i>
+            <i class="musicnote mnote5"></i>
+
+        </div>
+        <div class="fl clearfix controls">
+            <div class="fl contros-info">
+                <p class="song-name">honey世上没有真的感同身受</p>
+                <p class="singer-name">张艺兴</p>
+            </div>
+            <div class="fl controls-icons">
+                <span class="play"></span>
+                <span class="menu"></span>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- 等待加载层 -->
+    <div class="waittingbox">
+        <div class="tip">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+    <!-- 等待加载层end -->
+
+    <!-- 已经播放/当前歌曲列表 -->
+    <div class="songedlistbox">
+        <div class="songedlist">
+
+            <div class="songedtitle">
+                <div class="fl clearfix">
+                    <i class="fl cycle-icon"></i>
+                    <span>循环列表</span>
+                    <span class="songed-count">(6)</span>
+                </div>
+                <div class="fr">
+                    <i class="fl collect-icon"></i>
+                    <span>收藏全部</span>
+                    <div class="ct-close fr">
+                        <i class="close-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="currentsonglist">
+
+                <!-- <div class="currentsong-item active">
+                    <div class="fl img-countbox">
+                        <span class="imgcount index">01</span>
+                        <img class="autoimg imgcount ct-avatar" src="./images/singerlay.jpg" alt="">
+                    </div>
+                    <div class="fl ctitem-txt clearfix">
+                        <div class="fl ctitem-info">
+                            <span class="fl ctitem-name one-txt">梦不落雨林</span>
+                            <span class="fl ctitem-singer one-txt"> - 张艺兴</span>
+                        </div>
+                        <div class="fr love">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="fr del">
+                        <i></i>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 歌词页 -->
+    <div class="lyricsbox">
+        <div class="lyricslayer"></div>
+
+        <div class="lyrics">
+            <div class="lyrics-header clearfix">
+                <i class="fl header-back"></i>
+                <div class="lyric-info fl">
+                    <span class="sname one-txt">世上没有真的感同身受</span>
+                    <span class="ssinger one-txt">王源</span>
+                </div>
+                <i class="fr share"></i>
+            </div>
+
+            <div class="lyrics-content">
+                <div class="words">
+
+                    <!-- <p>张艺兴</p>
+                    <p>1111111</p>
+                    <p>1111111</p>
+                    <p>1111111</p>
+                    <p>1111111cdcdscdcc</p>
+
+                    <p>张艺兴</p>
+                    <p>1111111</p>
+                    <p>1111111</p>
+                    <p>1111111</p>
+                    <p>1111111cdcdscdcc</p> -->
+
+                </div>
+            </div>
+
+            <div class="lyrics-footer">
+
+                <!-- 进度条 -->
+                <div class="controls-progress">
+                    <div class="fl clearfix currenttime">00:00</div>
+                    <div class="fl progress clearfix">
+                        <div class="active-progress"></div>
+                        <div class="mask"></div>
+                        <div class="layer"></div>
+                    </div>
+                    <div class="fr clearfix duration">05:00</div>
+                </div>
+
+                <div class="fr lyr-controls-icons">
+                    <ul class="clearfix">
+                        <li class="lyr-cycle"><i></i></li>
+                        <li class="lyr-back"><i></i></li>
+                        <li class="lyr-play"><i></i></li>
+                        <li class="lyr-next"><i></i></li>
+                        <li class="lyr-menu"><i></i></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/rem.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/recommendSongs.js"></script>
+    <script src="./js/playSongs.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/lyrics.js"></script>
+</body>
+
+</html>
